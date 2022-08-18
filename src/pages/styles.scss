@@ -1,0 +1,66 @@
+@import "../styles/variables.scss";
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.primaryCard {
+  background: $primaryColor;
+  box-shadow: none;
+  flex-direction: row-reverse;
+
+  .cardBody {
+    margin: 0;
+    font-size: smaller;
+  }
+
+  .cardFooter {
+    width: 70%;
+    margin-right: 5%;
+
+    .primaryCardBtn {
+      width: 100%;
+    }
+  }
+}
+
+.cancelBtn {
+  background: $bgColor;
+}
+
+.termsCard {
+  .cardFooter {
+    display: block;
+
+    .disabled {
+      background: $bgColor;
+      color: azure;
+    }
+  }
+  .termsBlock {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10%;
+  }
+}
+
+.userRole {
+  font-weight: bold;
+}
+.disabledIcon {
+  margin-right: 6%;
+}
+
+@media (max-width: 768px) {
+  section {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    align-items: center;
+  }
+}

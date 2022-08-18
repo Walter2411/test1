@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: 43%;
+  background-color: $white;
+  padding: 5% 0;
+  border-radius: 7px;
+  border: none;
+  justify-content: center;
+}
+.primary {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
+.secondary {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+}

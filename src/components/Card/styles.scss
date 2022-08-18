@@ -1,0 +1,44 @@
+.card {
+  border-radius: 6px;
+  width: 40%;
+  border: none;
+  box-shadow: -1px 1px 20px 2px rgba(191, 191, 191, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.7%;
+  margin-bottom: 5%;
+  background: #ffffff;
+}
+.cardBody {
+  margin-bottom: 14%;
+}
+
+.cardHeader {
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    font-family: "Poppins";
+    font-weight: 800;
+  }
+  .cardHeaderIcon {
+    color: red;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+
+  .btnIcon {
+    margin-right: 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 75%;
+  }
+}
